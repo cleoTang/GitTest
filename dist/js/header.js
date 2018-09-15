@@ -1,0 +1,1 @@
+"use strict";var str="hello js";console.log("I am ".concat(str));

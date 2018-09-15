@@ -1,0 +1,80 @@
+.header {
+  border-bottom: 1px solid #e7e7e7;
+  height: 70px;
+  position: fixed !important;
+  z-index: 100 !important;
+  top: 0;
+  background: white; }
+  .header .logo {
+    width: 175px;
+    height: 27px;
+    margin-top: 20px;
+    margin-left: 50px;
+    float: left;
+    background: url(../images/header_logo_text.png) center center no-repeat; }
+  .header .nav {
+    width: 1009px;
+    height: 70px;
+    float: right; }
+    .header .nav .ul {
+      width: 526px;
+      height: 20px;
+      margin-top: 25px;
+      margin-left: 80px;
+      display: flex;
+      font-size: 14px;
+      justify-content: space-between;
+      align-items: center;
+      float: left; }
+      .header .nav .ul li a {
+        color: #3c2314; }
+        .header .nav .ul li a:hover {
+          color: #c8b49b; }
+      .header .nav .ul li .ac {
+        color: #c8b49b; }
+    .header .nav .login_wrap {
+      width: 96px;
+      height: 20px;
+      float: right;
+      margin-top: 20px;
+      margin-right: 120px;
+      font-size: 14px; }
+      .header .nav .login_wrap span a {
+        padding-right: 10px;
+        padding-left: 5px; }
+        .header .nav .login_wrap span a:hover {
+          color: #c8b49b; }
+      .header .nav .login_wrap .cc {
+        color: #c8b49b; }
+    .header .nav #login_wrap .cc {
+      color: #c8b49b; }
+    .header .nav #login_wrap .none {
+      display: none; }
+    .header .nav #login_wrap .block {
+      display: block; }
+    .header .nav .shop_bag_href {
+      display: block;
+      width: 55px;
+      height: 32px;
+      margin-top: 10px;
+      margin-right: -150px;
+      position: relative;
+      float: right; }
+    .header .nav .shop_bag {
+      width: 55px;
+      height: 32px;
+      background: url(../images/shop_bag.png) center left no-repeat; }
+      .header .nav .shop_bag p {
+        width: 21px;
+        height: 21px;
+        background: #3c2314;
+        border-radius: 50%;
+        position: absolute;
+        right: 6px;
+        top: 10px;
+        line-height: 21px; }
+        .header .nav .shop_bag p span {
+          color: white;
+          font-size: 12px;
+          position: absolute;
+          left: 4px; }

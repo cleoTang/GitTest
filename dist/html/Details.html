@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>蛋糕名录-ebeecake小蜜蜂蛋糕</title>
+	<link rel="stylesheet" type="text/css" href="/css/Details.css">
+	<script type="text/javascript" src="/libs/require.js" data-main="/js/Details.js"></script>
+	<script src='/libs/template-web.js'></script>
+
+</head>
+<body>
+	<!-- 头部 -->
+	<div id="header" class="header"></div>
+	<!-- 导航 -->
+	<div class="links">
+		<!--<div class="link">
+			<h3>分类</h3>
+			<p><a href="javascript:;">全部</a></p>
+			<ul>
+				<li><a href="javascript:;">新品</a></li>
+				<li><a href="javascript:;">生日</a></li>
+				<li><a href="javascript:;">聚会</a></li>
+				<li><a href="javascript:;">下午茶</a></li>
+				<li><a href="javascript:;">婚礼</a></li>
+				<li><a href="javascript:;">送全国</a></li>
+			</ul>
+		</div>-->
+		<div class="link">
+			<h3>口味</h3>
+			<p><a href="javascript:;">全部</a></p>
+			<ul id="classify">
+				<li><a href="javascript:;">巧克力</a></li>
+				<li><a href="javascript:;">芝士</a></li>
+				<li><a href="javascript:;">慕斯</a></li>
+				<li><a href="javascript:;">冰激凌</a></li>
+				<li><a href="javascript:;">含酒</a></li>
+				<li><a href="javascript:;">坚果</a></li>
+				<li><a href="javascript:;">奶油</a></li>
+				<li><a href="javascript:;">水果</a></li>
+				<li><a href="javascript:;">咖啡</a></li>
+			</ul>
+		</div>
+		<!-- <div class="link">
+			<h3>人群</h3>
+			<p><a href="javascript:;">全部</a></p>
+			<ul>
+				<li><a href="javascript:;">老人</a></li>
+				<li><a href="javascript:;">儿童</a></li>
+				<li><a href="javascript:;">孕妇</a></li>
+				<li><a href="javascript:;">情侣</a></li>
+			</ul>
+		</div> -->
+	</div>
+	<!-- 蛋糕列表 -->
+	<div class="cake_links">
+		<div class="item" id="allitem">
+			<!--//数据库的蛋糕数据-->
+		</div>
+		<ul class="pagelist" id="pagination">
+			<!--<li class="prev"><<</li>
+			<li>1</li>
+			<li>2</li>
+			<li class="next">>></li>-->
+		</ul>
+		<div class="item item_footer" id="item">
+			<h3>送全国</h3>
+			<ul>
+				<li>
+					<a class="imgblock" >
+						<div class="imgbox imgtop"><img src="/images/3474.jpg" alt=""></div>
+						<div class="imgbox imgbottom"><img src="/images/3508.jpg" alt=""></div>
+						<div class="item_info">
+							<p>北海道原味双层芝士</p>
+							<p class="item_infoP">￥168起</p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a class="imgblock">
+						<div class="imgbox imgtop"><img src="/images/3476.jpg" alt=""></div>
+						<div class="imgbox imgbottom"><img src="/images/3510.jpg" alt=""></div>
+						<div class="item_info">
+							<p>北海道抹茶双层芝士</p>
+							<p class="item_infoP">￥188起</p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a class="imgblock">
+						<div class="imgbox imgtop"><img src="/images/3475.jpg" alt=""></div>
+						<div class="imgbox imgbottom"><img src="/images/3509.jpg" alt=""></div>
+						<div class="item_info">
+							<p>北海道巧克力双层芝士</p>
+							<p class="item_infoP">￥188起</p>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- 尾部 -->
+	<footer id="footer"></footer>
+	<!-- //固定提示 -->
+	<div id="fixed"></div>
+</body>
+</html>
+<script type="text/html" id="list">
+	<ul id="item_module">
+		{{each data item index}}
+		<li data-cn={{item.id}}>
+			<a class="imgblock" href="/html/cakeinfo.html">
+				<div class="imgbox imgtop"><img src={{item.imgtop}} alt=""></div>
+				<div class="imgbox imgbottom"><img src={{item.imgbottom}} alt=""></div>
+				<div class="item_info">
+					<p>{{item.name}}</p>
+					<p class="item_infoP">￥<span>{{item.price}}</span>起</p>
+				</div>
+			</a>
+		</li>
+		{{ /each }}
+	</ul>
+</script>

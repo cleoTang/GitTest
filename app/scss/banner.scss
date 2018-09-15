@@ -1,0 +1,37 @@
+#banner ul {
+	height:650px;
+	position:relative;
+}
+#banner ul li{
+	height:650px;
+	display: none;
+	position:absolute;
+	top:0;
+	left:0;
+}
+#banner ul li img{
+	width:1263px;
+	height:650px;
+}
+#banner ul li.ac{display: block;}
+#banner ol li.ac{background: #3c2314;border: 1px solid #3c2314 }
+//按钮
+#banner ol{
+	position: absolute;
+	top:600px;
+	left:40px;
+	width:270px;
+	height:30px;
+	// background: red;
+}
+#banner ol li{
+	float: left;
+	width:30px;
+	height:30px;
+	border:2px solid #af8d6b;
+	margin-right:20px;
+	border-radius: 50%;
+	text-align:center;
+	line-height: 30px;
+	color: #af8d6b;
+}

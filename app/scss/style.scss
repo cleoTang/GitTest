@@ -1,0 +1,95 @@
+$back:blue;
+$font-size:30px;
+$bgcolor:#f34567,#ff0;
+$top: top;
+$list:(20px 30px) (30px 40px) (20px 40px);
+$map:(top:30px,left:20px,right:50px,bottom:10px);
+$baseFont:16px;
+$is:false;
+@mixin center{
+	margin-left:auto;
+	margin-right:auto;
+	@content;
+}
+@mixin trans($deg:90deg){
+	-webkit-transform:rotate($deg);
+	-moz-transform:rotate($deg);
+	-ms-transform:rotate($deg);
+	-o-transform:rotate($deg);
+	transform:rotate($deg);
+}
+@mixin border($border,$boxshadow...){
+	border:$border;
+	box-shadow:$boxshadow;
+}
+
+@function pxToRem($px){
+	@return $px/$baseFont*1rem;
+}
+
+h1{
+	color:$back;
+	font-size:$font-size;
+	background: nth($bgcolor,2);
+}
+.p-#{$top}{
+	color:red;
+	border-#{$top}:1px solid nth($bgcolor,2);
+	margin:nth($list,2);
+	@each $key, $val in $map{
+		padding-#{$key}: $val;
+	}
+	font-size: map-get($map,left);
+}
+ul{
+	width:30px;
+	@at-root li{
+		color:nth($bgcolor,1);
+	}
+
+	&:hover{
+		li{
+			color:nth($bgcolor,2);
+			font-size:$font-size;
+			@include center{
+				color:#ddd;
+			};
+			@include trans();
+		}
+	}
+}
+
+.p{
+	@include border(1px solid #ddd,0px 0px 10px 0px #000,0px 0px 10px 0px #f00);
+}
+
+
+
+.p1{
+	@extend .p;
+	width:300px;
+	color:red(nth($bgcolor,1));
+	width:320px/16px*1rem;
+	height:200px-110px;
+	font-size:pxToRem(30px);
+}
+
+.p2{
+	@if $is{
+		font-size:20px;
+	}@else{
+		font-size:30px;
+	}
+
+	@for $var from 1 to 3{
+		.item-#{$var}{
+			margin:nth($list,$var);
+		}
+	}
+
+	width:if(false,100px,200px);
+
+
+}
+
+

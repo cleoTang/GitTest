@@ -1,0 +1,1 @@
+"use strict";define(function(){return{name:"lisi",say:function(){alert(this.name)}}});

@@ -1,0 +1,474 @@
+@charset "UTF-8";
+/*清空默认的样式*/
+html {
+  color: #000;
+  background: #FFF; }
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+fieldset, img {
+  border: 0; }
+
+address, caption, cite, code, dfn, em, strong, th, var {
+  font-style: normal;
+  font-weight: normal; }
+
+ol, ul {
+  list-style: none; }
+
+caption, th {
+  text-align: left; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal; }
+
+q:before, q:after {
+  content: ''; }
+
+abbr, acronym {
+  border: 0;
+  font-variant: normal; }
+
+sup {
+  vertical-align: text-top; }
+
+sub {
+  vertical-align: text-bottom; }
+
+input, textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  *font-size: 100%; }
+
+legend {
+  color: #000; }
+
+#yui3-css-stamp.cssreset {
+  display: none; }
+
+a {
+  text-decoration: none;
+  color: #3C2314; }
+
+/*设置全局样式*/
+body {
+  font-family: "微软雅黑";
+  font-size: 12px;
+  color: #3C2314;
+  background-color: white;
+  box-sizing: border-box;
+  cursor: pointer; }
+
+.header {
+  border-bottom: 1px solid #e7e7e7;
+  height: 70px;
+  position: fixed !important;
+  z-index: 100 !important;
+  top: 0;
+  background: white; }
+  .header .logo {
+    width: 175px;
+    height: 27px;
+    margin-top: 20px;
+    margin-left: 50px;
+    float: left;
+    background: url(../images/header_logo_text.png) center center no-repeat; }
+  .header .nav {
+    width: 1009px;
+    height: 70px;
+    float: right; }
+    .header .nav .ul {
+      width: 526px;
+      height: 20px;
+      margin-top: 25px;
+      margin-left: 80px;
+      display: flex;
+      font-size: 14px;
+      justify-content: space-between;
+      align-items: center;
+      float: left; }
+      .header .nav .ul li a {
+        color: #3c2314; }
+        .header .nav .ul li a:hover {
+          color: #c8b49b; }
+      .header .nav .ul li .ac {
+        color: #c8b49b; }
+    .header .nav .login_wrap {
+      width: 96px;
+      height: 20px;
+      float: right;
+      margin-top: 20px;
+      margin-right: 120px;
+      font-size: 14px; }
+      .header .nav .login_wrap span a {
+        padding-right: 10px;
+        padding-left: 5px; }
+        .header .nav .login_wrap span a:hover {
+          color: #c8b49b; }
+      .header .nav .login_wrap .cc {
+        color: #c8b49b; }
+    .header .nav #login_wrap .cc {
+      color: #c8b49b; }
+    .header .nav #login_wrap .none {
+      display: none; }
+    .header .nav #login_wrap .block {
+      display: block; }
+    .header .nav .shop_bag_href {
+      display: block;
+      width: 55px;
+      height: 32px;
+      margin-top: 10px;
+      margin-right: -150px;
+      position: relative;
+      float: right; }
+    .header .nav .shop_bag {
+      width: 55px;
+      height: 32px;
+      background: url(../images/shop_bag.png) center left no-repeat; }
+      .header .nav .shop_bag p {
+        width: 21px;
+        height: 21px;
+        background: #3c2314;
+        border-radius: 50%;
+        position: absolute;
+        right: 6px;
+        top: 10px;
+        line-height: 21px; }
+        .header .nav .shop_bag p span {
+          color: white;
+          font-size: 12px;
+          position: absolute;
+          left: 4px; }
+
+#footer {
+  height: 280px;
+  margin-top: 60px;
+  padding-top: 73px;
+  text-align: center;
+  font-size: 12px;
+  background: url(../images/footer.png) center no-repeat; }
+  #footer .footer_nav {
+    width: 832px;
+    height: 80px;
+    margin: 0 auto;
+    padding-left: 160px;
+    overflow: hidden;
+    background: url(../images/footer_log.png) center left no-repeat; }
+    #footer .footer_nav ul {
+      width: 658px;
+      height: 24px;
+      margin-left: 40px;
+      display: flex;
+      margin-top: 53px;
+      justify-content: space-between;
+      align-items: center; }
+      #footer .footer_nav ul li {
+        width: 103px;
+        background: url(../images/footer_point.png) center right no-repeat; }
+        #footer .footer_nav ul li a {
+          color: #aa8764; }
+      #footer .footer_nav ul li:last-child {
+        width: 103px;
+        background: url(); }
+  #footer p {
+    margin-top: 30px;
+    color: #9b9b9b; }
+  #footer .p1 {
+    margin-top: 56px;
+    color: #9b9b9b; }
+  #footer .footer_info ul {
+    color: #9b9b9b;
+    width: 576px;
+    height: 27px;
+    margin: 0 auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    #footer .footer_info ul li a {
+      color: #9b9b9b; }
+      #footer .footer_info ul li a:hover {
+        color: #aa8764; }
+
+#seek {
+  height: 44px;
+  width: 112px;
+  background: url(/images/iconBack2.png) center center no-repeat;
+  background-size: 100%;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0; }
+  #seek p {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 25px; }
+  #seek h5 {
+    font-size: 13px;
+    color: white; }
+
+#right {
+  position: fixed;
+  bottom: 0px;
+  right: 2px;
+  z-index: 45; }
+  #right #hot {
+    position: absolute;
+    right: 2px;
+    bottom: 2px;
+    width: 40px;
+    height: 40px;
+    font-size: 15px;
+    border-radius: 3px;
+    background: #666;
+    text-align: center;
+    white-space: normal;
+    z-index: 99; }
+    #right #hot a {
+      color: #fff; }
+    #right #hot #none_img {
+      width: 480px;
+      height: 320px;
+      position: absolute;
+      right: 50px;
+      bottom: 20px;
+      display: none; }
+  #right #top {
+    position: absolute;
+    right: 2px;
+    bottom: 2px;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    border-radius: 3px;
+    color: #fff;
+    background: #666;
+    text-align: center;
+    line-height: 40px;
+    z-index: 50; }
+    #right #top a {
+      color: #fff; }
+
+.ac {
+  display: block; }
+
+.cakeinfo {
+  width: 1162px;
+  margin: 0 auto;
+  height: 493px;
+  margin-top: 120px; }
+  .cakeinfo .cakeinfo_top {
+    width: 100%;
+    height: 533px; }
+    .cakeinfo .cakeinfo_top .banner {
+      float: left;
+      width: 60%;
+      height: 90%;
+      position: relative; }
+      .cakeinfo .cakeinfo_top .banner ul li {
+        width: 60%;
+        height: 100%;
+        display: none;
+        position: relative; }
+        .cakeinfo .cakeinfo_top .banner ul li img {
+          position: absolute;
+          top: 0;
+          left: 110px;
+          width: 400px;
+          height: 400px; }
+      .cakeinfo .cakeinfo_top .banner ul li.cc {
+        display: block; }
+      .cakeinfo .cakeinfo_top .banner ol {
+        width: 260px;
+        height: 30px;
+        position: absolute;
+        bottom: 30px;
+        left: 30px; }
+        .cakeinfo .cakeinfo_top .banner ol li {
+          float: left;
+          width: 30px;
+          height: 30px;
+          border: 2px solid #af8d6b;
+          margin-right: 20px;
+          border-radius: 50%;
+          text-align: center;
+          line-height: 30px;
+          color: #af8d6b; }
+      .cakeinfo .cakeinfo_top .banner ol li.ac {
+        border: 2px solid #3c2314;
+        background: #3c2314;
+        color: white; }
+    .cakeinfo .cakeinfo_top .cakeinfo_right {
+      float: right;
+      width: 420px;
+      height: 493px;
+      margin-top: 40px;
+      border: 1px solid #e7e7e7; }
+      .cakeinfo .cakeinfo_top .cakeinfo_right .title {
+        font-size: 28px;
+        line-height: 28px;
+        margin: 0 26px; }
+      .cakeinfo .cakeinfo_top .cakeinfo_right .cakeSw {
+        width: 200px;
+        height: 60px;
+        margin-top: 30px;
+        margin-left: 30px; }
+        .cakeinfo .cakeinfo_top .cakeinfo_right .cakeSw .midu {
+          margin-bottom: 25px;
+          font-size: 12px;
+          width: 160px;
+          height: 3px; }
+          .cakeinfo .cakeinfo_top .cakeinfo_right .cakeSw .midu p {
+            float: left; }
+          .cakeinfo .cakeinfo_top .cakeinfo_right .cakeSw .midu ol {
+            margin-left: 40px; }
+            .cakeinfo .cakeinfo_top .cakeinfo_right .cakeSw .midu ol li {
+              width: 14px;
+              height: 14px;
+              background: #e7e7e7;
+              border-radius: 50%;
+              float: left;
+              margin-right: 10px; }
+            .cakeinfo .cakeinfo_top .cakeinfo_right .cakeSw .midu ol .ac {
+              background: #fabe00; }
+      .cakeinfo .cakeinfo_top .cakeinfo_right .info {
+        margin-left: 30px; }
+    .cakeinfo .cakeinfo_top .mark {
+      margin-top: 20px;
+      position: relative; }
+      .cakeinfo .cakeinfo_top .mark .mark_item {
+        position: absolute;
+        width: 420px;
+        height: 200px;
+        top: 20px; }
+        .cakeinfo .cakeinfo_top .mark .mark_item .item_left {
+          width: 230px;
+          height: 138px;
+          background: #fafafb;
+          float: left; }
+        .cakeinfo .cakeinfo_top .mark .mark_item .item_right {
+          margin-left: 10px;
+          float: left; }
+          .cakeinfo .cakeinfo_top .mark .mark_item .item_right p {
+            font-size: 14px;
+            position: relative; }
+            .cakeinfo .cakeinfo_top .mark .mark_item .item_right p img {
+              margin-left: 10px;
+              width: 27px;
+              height: 26px; }
+            .cakeinfo .cakeinfo_top .mark .mark_item .item_right p span {
+              display: block;
+              width: 120px;
+              position: absolute;
+              top: 5px;
+              left: 40px; }
+          .cakeinfo .cakeinfo_top .mark .mark_item .item_right h3 {
+            font-size: 23px;
+            margin-left: 10px; }
+            .cakeinfo .cakeinfo_top .mark .mark_item .item_right h3 i {
+              font-style: normal; }
+            .cakeinfo .cakeinfo_top .mark .mark_item .item_right h3 span {
+              font-size: 12px; }
+    .cakeinfo .cakeinfo_top .hidden {
+      display: none; }
+    .cakeinfo .cakeinfo_top .mark_btn {
+      width: 400px;
+      height: 40px;
+      margin-top: 210px;
+      position: relative; }
+      .cakeinfo .cakeinfo_top .mark_btn .btn li {
+        width: 70px;
+        height: 30px;
+        border: 1px solid #c8b49b;
+        text-align: center;
+        line-height: 30px;
+        float: left;
+        margin-left: 20px;
+        font-size: 14px; }
+      .cakeinfo .cakeinfo_top .mark_btn .btn li:hover {
+        color: #c8b49b; }
+    .cakeinfo .cakeinfo_top .btn li.bc {
+      background: #3c2314;
+      color: #c8b49b;
+      border: 1px solid #3c2314; }
+    .cakeinfo .cakeinfo_top .button {
+      margin-left: 20px;
+      margin-top: 10px; }
+      .cakeinfo .cakeinfo_top .button p {
+        width: 170px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        float: left;
+        border: 1px solid #E9E9E9;
+        margin-right: 20px;
+        font-size: 14px;
+        color: #E9E9E9; }
+      .cakeinfo .cakeinfo_top .button .p1 {
+        background-color: #3C2314;
+        border: 1px solid #3C2314; }
+        .cakeinfo .cakeinfo_top .button .p1 a {
+          color: #E9E9E9; }
+
+.list_info {
+  width: 1162px;
+  height: 785px;
+  margin: 0 auto; }
+  .list_info img {
+    width: 100%; }
+
+.index_row {
+  width: 1162px;
+  height: 385px;
+  margin: 0 auto;
+  margin-top: 850px; }
+  .index_row .title {
+    font-size: 18px;
+    color: #3C2314;
+    padding-bottom: 30px; }
+  .index_row .item {
+    height: 336px;
+    width: 100%; }
+    .index_row .item ul {
+      width: 100%;
+      height: 336px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .index_row .item ul li {
+        height: 280px;
+        width: 280px;
+        position: relative; }
+        .index_row .item ul li img {
+          height: 280px;
+          width: 280px; }
+        .index_row .item ul li .item_infoP {
+          color: #aa8764;
+          font-size: 13px;
+          margin-top: 4px; }
+      .index_row .item ul .item_info {
+        box-sizing: border-box;
+        width: 252px;
+        height: 58px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        text-align: center;
+        padding-top: 15px;
+        line-height: 15px;
+        position: absolute;
+        bottom: 20px;
+        left: 15px;
+        background: white;
+        opacity: 0.4; }
+
+#footer {
+  margin-top: 200px; }

@@ -1,0 +1,97 @@
+@import "reset";
+@import "header";
+@import "footer";
+@import "fixed";
+.login{
+	width:382px;
+	height:373px;
+	// border:1px solid;
+	margin:0 auto;
+	margin-top:90px;
+	h3{
+		font-size: 18px;
+		height:68px;
+		line-height:60px;
+		text-align: center;
+		color:$font-color;
+		border-bottom:3px solid $border-color; 
+	}
+	form{
+		p{  
+
+			font-size: 16px;
+			position: relative;
+			input{
+			width:278px;
+			height:40px;
+			margin-left:60px;
+			margin-top:20px;
+			text-align:center;
+			font-size:15px
+			}
+			i{
+				position:absolute;
+				right:-120px;
+				top:35px;
+				color:red;
+				display: none;
+			}
+		}
+		i.ac{display: block;}
+		.yzm1{
+			width:380px;
+			height:50px;
+			// border: 1px solid;
+			margin-top: 20px;
+			line-height: 50px;
+			// position: absolute;
+			input{
+				width:148px;
+				height:40px;
+				margin-top:0px;
+				margin-left: 45px;
+
+			}
+			i{top:0px;}
+			span{
+				display: inline-block;
+				width:100px;
+				height:40px;
+				border:1px solid $border-color;
+				// margin-top:30px;
+				position: absolute;
+				top:5px;
+				left:280px;
+				text-align: center;
+				line-height: 40px;
+				background:$border-color;
+				font-size: 23px;
+				font-style:italic;
+			}
+			
+		}
+		button{
+			width:380px;
+			height:40px;
+			background:$font-color;
+			border:none;
+			color:$border-color;
+			border-radius: 3px;
+			margin-top:40px;
+			font-size: 18px;
+			// font-weight: bolder;
+		}
+		.loginP{
+			float:right;
+			margin-right:-23px;
+			margin-top:23px;
+			font-size: 13px;
+			a{
+				margin-right:23px;
+				&:hover{color:$border-color;}
+			}
+		}
+		
+	}
+}
+

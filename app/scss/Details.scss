@@ -1,0 +1,153 @@
+@import "reset";
+@import "header";
+@import "footer";
+@import "fixed";
+.links{
+	width:1162px;
+	height:190px;
+	border-bottom: 1px solid #e7e7e7;
+	margin:0 auto;
+	padding-top:10px;
+	font-size: 13px;
+	line-height: 13px;
+	.link{
+		height:13px;
+		// border:1px solid;
+		margin-top:130px;
+		h3{
+			color:#aaaaaa;
+			margin-right:40px;
+			float: left;
+		}
+		p{
+			width:90px;
+			height:13px;
+			text-align: center;
+			border-right:1px solid $font-color;
+			float: left;
+			a{color:$border-color;}
+		}
+		ul{
+			margin-left:170px;
+			li{
+				float:left;
+				margin:0 21px;
+				
+				a{
+					&:hover{color:$border-color;}
+				}
+			}
+		}
+	}
+}
+// 蛋糕列表
+.cake_links{
+	width:1176px;
+	margin: 0 auto;
+	padding-top:20px;
+
+
+// 
+.item{
+	// height:336px;
+	// background: red;
+	width:100%;
+	// background: red;
+	ul{
+		width:100%;
+		// height:336px;
+		display: flex;
+		justify-content:flex-start;
+		align-items:center;
+		flex-wrap:wrap;
+		li{
+			height:280px;
+			width: 280px;
+			position: relative;
+			overflow:hidden;
+			&:hover .imgbottom{display: block;transform:scale(1.2,1.2);}
+			&:hover .item_info{opacity: 0.7;}
+			a{
+				display: block;
+				height:280px;
+				width: 280px;
+				// overflow: hidden;
+				.imgbox{
+					position: absolute;
+					top:0;
+					left:0;
+					overflow:hidden;
+					.img{
+						height:280px;
+						width: 280px;
+					}
+				}
+				.imgbottom{display: none;}
+				.ac{display:block;}
+				
+				.item_info{
+					box-sizing:border-box;
+					width: 252px;
+					height: 58px;
+					border: 1px solid #ccc;
+					border-radius: 4px;
+					text-align: center;
+					padding-top:15px;
+					line-height: 15px;
+					position: absolute;
+					bottom:20px;
+					left:15px;
+					background: white;
+					opacity: 0.4;
+				}
+			}
+		}
+	}
+}
+.pagelist{
+    width:200px;
+    height:40px;
+//  background: red;
+    margin: 0 auto;
+    margin-top: 30px;
+    li{
+        float: left;
+        width:40px;
+        height:40px;
+        border:1px solid $border-color;
+        text-align: center;
+        line-height: 40px;
+        font-size:16px;
+        color: $font-color;
+        &:hover{color: $border-color; }
+    }
+    .next{color: $border-color;
+           &:hover{color: $font-color; }
+          }
+    .prev{color: $border-color;
+           &:hover{color: $font-color; }
+          }
+    
+}
+.item_footer{
+	width:100%;
+	height:336px;
+	margin-top:70px;
+	border-top:1px solid #e7e7e7;
+	ul{
+		width:75%;
+		height:336px;
+		display: flex;
+		justify-content:space-between;
+		align-items:center;
+	h3{
+			color:$font-color;
+			margin-right:40px;
+			padding-top: 30px;
+			font-size: 16px;
+			padding-bottom: 30px;
+	}
+}
+}
+	
+}

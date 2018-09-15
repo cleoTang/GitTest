@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>蛋糕详情页</title>
+</head>
+<body>
+	<link rel="stylesheet" type="text/css" href="/../css/cakeinfo.css">
+	<script type="text/javascript" src="/libs/require.js" data-main="/js/cakeinfo.js"></script>
+	<script src='/libs/template-web.js'></script>
+	<!-- 头部 -->
+	<div id="header" class="header"></div>
+	<div class="cakeinfo" id="jiazai">
+
+
+
+
+    </div>
+	
+<!-- 更多推荐 -->
+<div class=index_row>
+	<div class="title">
+		大家推荐购买
+	</div>
+	<!-- 蛋糕 -->
+
+	<div class="item">
+		<ul>
+			<li><img src="/images/3489.jpg" alt="">
+			<div class="item_info">
+				<p>桃芝|樱桃芝士蛋糕</p>
+				<p class="item_infoP">￥265</p>
+			</div>
+			</li>
+			<li><img src="/images/3481 (1).jpg" alt="">
+				<div class="item_info">
+					<p>回归|90蛋糕</p>
+					<p class="item_infoP">￥225</p>
+			    </div>
+			</li>
+			<li><img src="/images/3473.jpg" alt="">
+				<div class="item_info">
+					<p>初心|牛油果低脂蛋糕</p>
+					<p class="item_infoP">￥335</p>
+				</div>
+			</li>
+			<li><img src="/images/3477.jpg" alt="">
+				<div class="item_info">
+					<p>向往|酸樱桃椰蓉蛋糕</p>
+					<p class="item_infoP">￥225</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+	<!-- 尾部 -->
+	<div id="footer"></div>
+	<!-- //固定提示 -->
+	<div id="fixed"></div>
+</body>
+</html>
+<script type="text/html" id="info_list">
+		<div class="cakeinfo_top">
+			{{each data item index}}
+			<div class="banner">
+				<ul>
+					<li class="cc"><img src={{item.imginfo1}} alt=""></li>
+					<li><img src={{item.imginfo2}} alt=""></li>
+					<li><img src={{item.imginfo3}} alt=""></li>
+				</ul>
+				<ol>
+					<li class="bc">1</li>
+					<li>2</li>
+					<li>3</li>
+				</ol>
+			</div>
+			<!-- 详情信息 -->
+			<div class="cakeinfo_right">
+				<div class="title">
+					{{item.name}}
+				</div>
+				<div class="cakeSw">
+					<div class="midu">
+						<p>蜜度</p>
+						<ol>
+							<li class="ac"></li>
+							<li class="ac"></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ol>
+					</div>
+					<div class="midu">
+						<p class="zhidu">脂度</p>
+						<ol>
+							<li class="ac"></li>
+							<li class="ac"></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ol>
+					</div>
+				</div>
+				<div class="info">
+					<p>一种甘甜，充盈着美好的瞬间；绵绵的思念，<br/>
+					是一抹温柔的挂牵，滋润着生生不息的华年。<br/>
+					感人的情怀，珍藏于内心的甜蜜，是一种深沉的渴望。</p>
+				</div>
+				<div class="mark" id="mark">
+					<div class="mark_item">
+						<div class="item_left"><img src="/images/y18.png" alt=""></div>
+						<!-- 规格 -->
+						<div class="item_right">
+								<p><img src="/images/font1.jpg" alt=""><span>1.4磅</span></p>
+								<p><img src="/images/font2.jpg" alt=""><span>+6套餐具</span></p>
+								<p><img src="/images/font3.png" alt=""><span>适合3-6人食用</span></p>
+								<p><img src="/images/font4.png" alt=""><span>最早21:30配送</span></p>
+								<h3>￥<i>{{item.price}}</i>/<span>18cm</span></h3>
+						</div>
+					</div>
+					<div class="mark_item hidden">
+						<div class="item_left"><img src="/images/y24.png" alt=""></div>
+						<div class="item_right">
+							<p><img src="/images/font1.jpg" alt=""><span>2.6磅</span></p>
+							<p><img src="/images/font2.jpg" alt=""><span>+12套餐具</span></p>
+							<p><img src="/images/font3.png" alt=""><span>适合7-12人食用</span></p>
+							<p><img src="/images/font4.png" alt=""><span>最早14:00配送</span></p>
+							<h3>￥<i>{{item.price1}}</i>/<span>24cm</span></h3>
+						</div>
+
+					</div>
+					<div class="mark_item hidden">
+						<div class="item_left"><img src="/images/y29.png" alt=""></div>
+							<div class="item_right">
+								<p><img src="/images/font1.jpg" alt=""><span>3.6磅</span></p>
+								<p><img src="/images/font2.jpg" alt=""><span>+18套餐具</span></p>
+								<p><img src="/images/font3.png" alt=""><span>适合13-18人食用</span></p>
+								<p><img src="/images/font4.png" alt=""><span>最早17:00配送</span></p>
+								<h3>￥<i>{{item.price2}}</i>/<span>29cm</span></h3>
+							</div>
+					</div>
+					<div class="mark_item hidden">
+						<div class="item_left"><img src="/images/y33.png" alt=""></div>
+							<div class="item_right">
+								<p><img src="/images/font1.jpg" alt=""><span>4.6磅</span></p>
+								<p><img src="/images/font2.jpg" alt=""><span>+30套餐具</span></p>
+								<p><img src="/images/font3.png" alt=""><span>适合20-30人食用</span></p>
+								<p><img src="/images/font4.png" alt=""><span>最早17:00配送</span></p>
+								<h3>￥<i>{{item.price3}}</i>/<span>33cm</span></h3>
+							</div>
+					</div>
+				</div>
+
+				<div class="mark_btn">
+					<ol class="btn" id="btn">
+						<li class="bc">18厘米</li>
+						<li>24厘米</li>
+						<li>29厘米</li>
+						<li>33厘米</li>
+					</ol>
+				</div>
+			
+				<div class="button">
+					<p class="p1">加入购物袋</p>
+					<p class="p2"><a href="/html/cakemessage.html">立即购买</a></p> 
+				</div>
+			
+		</div>
+		<div class="list_info"><img src={{item.imginfo4}} alt=""></div>
+		{{ /each }}
+	</div>
+	
+</script>

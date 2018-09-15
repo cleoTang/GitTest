@@ -1,0 +1,23 @@
+@import "reset";
+@import "header";
+@import "footer";
+@import "fixed";
+.activity{
+	width:1162px;
+	// background: pink;
+	margin: 100px auto 40px;
+	ul{
+		display: flex;
+		justify-content:space-between;
+		align-items:center;
+		flex-wrap:wrap;
+		li{
+			width:570px;
+			height:375px;
+			margin-bottom:10px;
+			img{
+				width:100%;
+			}
+		}
+	}
+}

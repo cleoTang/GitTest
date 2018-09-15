@@ -1,0 +1,62 @@
+#seek {
+  height: 44px;
+  width: 112px;
+  background: url(/images/iconBack2.png) center center no-repeat;
+  background-size: 100%;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0; }
+  #seek p {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 25px; }
+  #seek h5 {
+    font-size: 13px;
+    color: white; }
+
+#right {
+  position: fixed;
+  bottom: 0px;
+  right: 2px;
+  z-index: 45; }
+  #right #hot {
+    position: absolute;
+    right: 2px;
+    bottom: 2px;
+    width: 40px;
+    height: 40px;
+    font-size: 15px;
+    border-radius: 3px;
+    background: #666;
+    text-align: center;
+    white-space: normal;
+    z-index: 99; }
+    #right #hot a {
+      color: #fff; }
+    #right #hot #none_img {
+      width: 480px;
+      height: 320px;
+      position: absolute;
+      right: 50px;
+      bottom: 20px;
+      display: none; }
+  #right #top {
+    position: absolute;
+    right: 2px;
+    bottom: 2px;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    border-radius: 3px;
+    color: #fff;
+    background: #666;
+    text-align: center;
+    line-height: 40px;
+    z-index: 50; }
+    #right #top a {
+      color: #fff; }
+
+.ac {
+  display: block; }
